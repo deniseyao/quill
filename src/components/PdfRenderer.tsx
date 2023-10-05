@@ -186,7 +186,7 @@ const PdfRenderer = ({ url }: PdfRendererProps) => {
             >
               {isLoading && renderedScale ? (
                 <Page
-                  key={("@", +renderedScale)}
+                  key={"@" + renderedScale}
                   pageNumber={currPage}
                   width={width ? width : 1}
                   scale={scale}
@@ -196,7 +196,7 @@ const PdfRenderer = ({ url }: PdfRendererProps) => {
               ) : null}
 
               <Page
-                key={("@", +scale)}
+                key={"@" + scale}
                 pageNumber={currPage}
                 width={width ? width : 1}
                 scale={scale}
